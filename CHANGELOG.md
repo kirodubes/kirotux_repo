@@ -7,6 +7,9 @@
   `kiro-sddm-simplicity-hyprland`). Until now they only lived in a local folder used at ISO build time, so
   installed systems never received updates for them.
 
+- First packages: `kirotux-thunar` 26.10-2 and `kiro-sddm-simplicity-hyprland` 26.07-1, moved here with their
+  existing Kiro-key signatures from the local `kirotux-repo` folder (and removed from its database).
+
 ### Technical Details
 - Same setup as `kiro_repo`: GitHub Pages, packages detach-signed with the Kiro key, unsigned database
   (`SigLevel = Required DatabaseOptional`). `repo.sh` and `up.sh` copied from `kiro_repo` with the database
