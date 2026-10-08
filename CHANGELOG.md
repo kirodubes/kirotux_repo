@@ -1,5 +1,18 @@
 # Changelog
 
+## 2026.10.08
+
+### What Changed
+- Removed `kiro-sddm-simplicity-hyprland-26.07-1` (+ `.sig`) from `x86_64/`. The package is renamed to
+  `kirotux-sddm-simplicity-hyprland`, and its next build lands here under the new name.
+
+### Technical Details
+- `repo.sh` rebuilds the database from the files present, so deleting the package file is enough to drop the old name.
+  The new package `replaces` the old one, so installed systems switch over on `pacman -Syu`.
+
+### Files Modified
+- `x86_64/kiro-sddm-simplicity-hyprland-26.07-1-any.pkg.tar.zst` (+ `.sig`) removed
+
 ## 2026.10.04
 
 ### What Changed
