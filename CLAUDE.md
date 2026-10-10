@@ -5,6 +5,6 @@ Public pacman repo for Kirotux packages that stay installed on user systems, ser
 
 - Publish: put `*.pkg.tar.zst` in `x86_64/`, run `./up.sh` (runs `repo.sh`: sign with Kiro key 33B761B0EE5AD4FD,
   `repo-add`, then commits and pushes). Same flow as `~/KIRO/kiro_repo`.
-- Build-time-only packages (`calamares-wayland`, `kiro-calamares-config-wayland`) do NOT belong here: they stay
+- Build-time-only packages (`kirotux-calamares`, `kirotux-calamares-config`) do NOT belong here: they stay
   in the local `~/KIROTUX/kirotux-repo` folder, because the install removes them anyway.
 - Installed systems get this repo through the ISO's `airootfs/etc/pacman.conf` `[kirotux_repo]` section.
